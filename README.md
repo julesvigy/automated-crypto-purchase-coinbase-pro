@@ -1,1 +1,1 @@
-# automated-eth-purchase-coinbase-pro
+# automated-crypto-purchase-coinbase-pro
