@@ -1,1 +1,1 @@
-# automated-crypto-trader
+# automated-eth-purchase-coinbase-pro
