@@ -1,0 +1,24 @@
+{
+  "name": "automated-crypto-trader",
+  "version": "1.0.0",
+  "description": "automate daily crypto purchases and aviod fees",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/julesvigy/automated-crypto-trader.git"
+  },
+  "author": "Jules Vigy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/julesvigy/automated-crypto-trader/issues"
+  },
+  "homepage": "https://github.com/julesvigy/automated-crypto-trader#readme",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "crypto": "^1.0.1",
+    "dotenv": "^10.0.0"
+  }
+}
