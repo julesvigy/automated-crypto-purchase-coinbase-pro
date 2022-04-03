@@ -23,9 +23,9 @@ async function buy() {
     const price = await ethPrice();
     const body = JSON.stringify({
         price: price,
-        size: '0.001',
+        size: process.env.ORDER_SIZE,
         side: 'buy',
-        product_id: 'ETH-USD'
+        product_id: process.env.COIN_USD
     });
     const values = getAuthenticationSignature('POST', '/orders', body)
 
@@ -76,10 +76,6 @@ async function transferFundsFromBank() {
     })
 }
 
-async function transferEthToCoinbase(){
-
-}
-
 ////////////////////////////////HELPERS///////////////////////////////////////
 function getAuthenticationSignature(method, requestPath, body) {
     const timestamp = Date.now() / 1000;
@@ -101,7 +97,7 @@ function getAuthenticationSignature(method, requestPath, body) {
 }
 
 async function ethPrice() {
-    return axios.get('https://api.pro.coinbase.com/products/ETH-USD/book')
+    return axios.get(`https://api.pro.coinbase.com/products/${process.env.COIN_USD}/book`)
         .then((res) => {
             return res.data.asks[0][0];
         }).catch((err) => {
