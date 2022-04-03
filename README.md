@@ -1,6 +1,6 @@
-# automated-crypto-purchase-coinbase-pro
+# coinbase-pro-recurring-purchases
 # WARNING!
-The automated-crypto-purchase-coinbase-pro is a script that allows you to buy crypto currencies using the Coinbase Pro API on a set interval. That being said you should not directly use it rather use it to help with setting up your own script to make automated crypto purchases. I recommned running this script to make calls to the  Coinbase [sandbox](https://docs.cloud.coinbase.com/exchange/docs/sandbox) account to get a feel how the API works.
+The coinbase-pro-recurring-purchases is a script that allows you to buy crypto currencies using the Coinbase Pro API on a set interval. That being said you should not directly use it rather use it to help with setting up your own script to make automated crypto purchases. I recommned running this script to make calls to the  Coinbase [sandbox](https://docs.cloud.coinbase.com/exchange/docs/sandbox) account to get a feel how the API works.
 
 ## How to Run Script:
 
